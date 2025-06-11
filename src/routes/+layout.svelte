@@ -7,8 +7,7 @@
 
 	export const continentCode = writable('');
 
-	const myAPIKey = '83da9b2dcf134505beb00f51915dff53';
-	let loading = true;
+	let loading = false;
 
 	function updateLinks() {
 		iframe_params.set(window.location.search);
@@ -17,26 +16,15 @@
 	onMount(() => {
 		updateLinks();
 	});
-
-	onMount(async () => {
-		const res = await fetch(`https://api.geoapify.com/v1/ipinfo?apiKey=${myAPIKey}`);
-		const result = await res.json();
-		continentCode.set(result.continent.code);
-		loading = false;
-	});
 </script>
 
 {#if loading}
 	<div class="wrap">
 		<div class="loader"></div>
 	</div>
-{:else if $continentCode !== 'EU'}
+{:else}
 	<div class="app" dir="rtl">
 		<slot />
-	</div>
-{:else}
-	<div class="wrap">
-		<h1 style="color: black; font-weight: 400;">The service is not provided in your country</h1>
 	</div>
 {/if}
 

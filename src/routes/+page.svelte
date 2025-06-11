@@ -1,11 +1,12 @@
 <script>
+	import { base } from '$app/paths';
 	import meta__img from '$lib/images/meta__img.jpg';
 	import AllBlocks from '../components/AllBlocks.svelte';
 
 	const title =
 		'لنتعرَّف على منصَّة IQ Option - ما هي وما آلية عملها كوسيط مالي، مع نظرة على الحساب الإسلامي لديها';
 	const desc =
-		'IQ Option: Descubra como funciona, o que é e como usar esta popular plataforma de negociação online. Saiba tudo sobre a corretora que conquistou o Brasil.';
+		'تُعدُّ IQ Option منصَّة تداوُل إلكترونية مُتاحة عبر الإنترنت، مُصمَّمة لتلبية طيف واسع من التفضيلات الاستثمارية لدى العملاء. تضمُّ قاعدة مستخدمين واسعة، مع ملايين الأعضاء المُسجَّلين لديها عبر ما يزيد عن 213 دولة حول العالم. ستجد في هذا الدليل الإرشاديّ الشامل إجاباتٍ لكل ما يخطر ببالك حول منصَّة IQ Option، بدءًا من أبرز مزاياها الأساسية ووصولًا إلى الوظائف المتقدِّمة، بما يشمل ميزة الحساب الإسلامي على وجه الخصوص.';
 </script>
 
 <svelte:head>
@@ -23,7 +24,7 @@
 	<link
 		rel="preload"
 		as="image"
-		href="/images/bg_intro.webp"
+		href="{base}/images/bg_intro.webp"
 		type="image/webp"
 		fetchpriority="high"
 	/>
