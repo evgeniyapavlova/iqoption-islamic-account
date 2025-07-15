@@ -24,7 +24,7 @@
 <style>
 	.question {
 		font-weight: 600;
-		text-align: left;
+		text-align: start;
 	}
 	.item-label {
 		display: flex;

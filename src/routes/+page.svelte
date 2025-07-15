@@ -16,7 +16,7 @@
 	<meta property="og:description" content={desc} />
 	<meta property="og:image" content={meta__img} />
 
-	<meta name="twitter:site" content="iq-trade.br.com" />
+	<meta name="twitter:site" content="iqbroker.com.sa" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={desc} />

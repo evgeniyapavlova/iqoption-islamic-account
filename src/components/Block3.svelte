@@ -1,5 +1,4 @@
 <script>
-	import { iframe_params } from '../lib/constants/reg_link';
 	import ImageWrap from './common/ImageWrap.svelte';
 </script>
 
@@ -831,42 +830,8 @@
 	</ul>
 </section>
 
-<section class="iframe-wrap" id="registration">
-	<div class="iframe-container">
-		<iframe
-			loading="lazy"
-			id="form-iframe"
-			title="IQ Option registration form"
-			src="https://iqbroker.com/lp/regframe-01-light/ar/{$iframe_params}"
-			frameborder="0"
-			allowfullscreen
-		></iframe>
-	</div>
-</section>
-
 <style>
 	li b:first-child {
 		display: block;
-	}
-
-	.iframe-wrap {
-		padding-top: 35px;
-	}
-
-	.iframe-container {
-		display: flex;
-		justify-content: center;
-		min-height: 950px;
-		margin-left: -4px;
-		margin-right: -4px;
-	}
-	iframe {
-		width: 100%;
-	}
-
-	@media screen and (max-width: 400px) {
-		.iframe-wrap {
-			padding: 0 12px;
-		}
 	}
 </style>
