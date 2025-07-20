@@ -1,12 +1,11 @@
 <script>
 	import { base } from '$app/paths';
-	import meta__img from '$lib/images/meta__img.jpg';
-	import AllBlocks from '../components/AllBlocks.svelte';
+	import meta__img from '$lib/images/meta__img_en.jpg';
+	import AllBlocks from '../../components/en/AllBlocksEN.svelte';
 
-	const title =
-		'لنتعرَّف على منصَّة IQ Option – ما هي وما آلية عمل هذا الوسيط المالي، وهل تُوفِّر حسابًا إسلاميًا';
+	const title = 'IQ Option - What Is and How Does Broker Work, Is Islamic Account';
 	const desc =
-		' استكشِف آلية عمل منصَّة IQ Option، وتعرَّف على أبرز ميزاتها، إضافةً إلى مزايا الحساب الإسلامي المُصمَّم خصيصًا للمُتداوِلين المُلتزمين بضوابط أخلاقيَّة ودينيَّة خاصَّة.';
+		'Explore how IQ Option works, its main features, and the benefits of an Islamic account designed for traders with specific ethical requirements.';
 </script>
 
 <svelte:head>
@@ -22,11 +21,11 @@
 	<meta name="twitter:description" content={desc} />
 	<meta name="twitter:image" content={meta__img} />
 
-	<meta property="og:locale" content="ar_SA" />
+	<meta property="og:locale" content="en_US" />
 
 	<link rel="alternate" hreflang="ar" href="https://iqbroker.com.sa/" />
 	<link rel="alternate" hreflang="en" href="https://iqbroker.com.sa/en/" />
-	<link rel="alternate" hreflang="x-default" href="https://iqbroker.com.sa/" />
+	<link rel="alternate" hreflang="x-default" href="https://iqbroker.com.sa/en/" />
 
 	<link rel="canonical" href="https://iqbroker.com.sa" />
 
@@ -39,6 +38,4 @@
 	/>
 </svelte:head>
 
-<div dir="rtl">
-	<AllBlocks />
-</div>
+<AllBlocks />

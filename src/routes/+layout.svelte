@@ -23,7 +23,7 @@
 		<div class="loader"></div>
 	</div>
 {:else}
-	<div class="app" dir="rtl">
+	<div class="app">
 		<slot />
 	</div>
 {/if}
