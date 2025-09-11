@@ -7,5 +7,10 @@
     ExpiresByType font/woff "access plus 1 year"
     ExpiresByType font/woff2 "access plus 1 year"
     ExpiresByType text/css "access plus 1 year"
-    ExpiresByType text/x-javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^/(es|en)/?$ [NC]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

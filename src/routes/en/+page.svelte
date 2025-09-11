@@ -15,7 +15,7 @@
 	<meta property="og:description" content={desc} />
 	<meta property="og:image" content={meta__img} />
 
-	<meta name="twitter:site" content="iqbroker.com.sa" />
+	<meta name="twitter:site" content="iqoptionsaudi.com" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={desc} />
@@ -23,11 +23,11 @@
 
 	<meta property="og:locale" content="en_US" />
 
-	<link rel="alternate" hreflang="ar" href="https://iqbroker.com.sa/" />
-	<link rel="alternate" hreflang="en" href="https://iqbroker.com.sa/en/" />
-	<link rel="alternate" hreflang="x-default" href="https://iqbroker.com.sa/en/" />
+	<link rel="alternate" hreflang="ar" href="https://iqoptionsaudi.com/" />
+	<link rel="alternate" hreflang="en" href="https://iqoptionsaudi.com/en/" />
+	<link rel="alternate" hreflang="x-default" href="https://iqoptionsaudi.com/en/" />
 
-	<link rel="canonical" href="https://iqbroker.com.sa" />
+	<link rel="canonical" href="https://iqoptionsaudi.com" />
 
 	<link
 		rel="preload"
