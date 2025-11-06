@@ -1,21 +1,10 @@
 <script>
-	import './styles.css';
-
-	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
-	import { iframe_params } from '../lib/constants/reg_link';
+	import './styles.css';
 
 	export const continentCode = writable('');
 
 	let loading = false;
-
-	function updateLinks() {
-		iframe_params.set(window.location.search);
-	}
-
-	onMount(() => {
-		updateLinks();
-	});
 </script>
 
 {#if loading}

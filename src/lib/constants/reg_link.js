@@ -1,3 +1,3 @@
-import { writable } from 'svelte/store';
+import { readable } from 'svelte/store';
 
-export const iframe_params = writable('');
+export const iframe_params = readable('?aff=129128&afftrack=iq_ar');
